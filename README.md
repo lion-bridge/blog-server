@@ -25,7 +25,17 @@
 - [FileInterceptor-官方文档](https://docs.nestjs.com/techniques/file-upload#file-upload)
 - [multer,express中间件-GitHub文档](https://github.com/expressjs/multer#multeropts)
 
+### 3.2 Logger
+[winston-github文档](https://github.com/winstonjs/winston)
 
 
 
-
+# 4.待办任务
+- [ ] 1.使用`multer`进行文件上传
+  - [ ] 多文件上传怎么处理
+  - [ ] 如何确认是否上传成功
+  - [ ] 把nestjs的文档盒multer的文档翻译，发到cscn上
+- [ ] 2.使用`Logger`
+  - [ ] 1.如何自定义logger
+  - [ ] 2.使用winston讲log持久化
+  - [ ] 4.打印请求和响应的日志
