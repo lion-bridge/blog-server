@@ -1,19 +1,22 @@
 import { Controller, Get, Post, UploadedFile, UseInterceptors } from "@nestjs/common";
-import { FileInterceptor } from "@nestjs/platform-express";
-
-
+import { FileInterceptor  } from "@nestjs/platform-express";
+import  {Storage } from '../utils/multer'
 @Controller('/image')
 export class ImageController {
+    
     @Post('/upload')
     @UseInterceptors(FileInterceptor('file', {
-        dest: '/opt/homebrew/var/www/images',
-        fileFilter: (req, file, cb) => {
-        }
+        storage: Storage.diskStorage({
+            destination: '/opt/homebrew/var/www/images',
+            filename: (req, file, cb) => {
+                console.log('storage.file=', file)
+                cb(null, `${Date.now()}-${file.originalname}`);
+            }
+        }),
     }))
     public upload(@UploadedFile() file: Express.Multer.File):string {
         console.log('file=', file);
-        
-        return '上传成功！';
+        return `http://localhost:8080/images/${file.filename}`;
     }
     @Get('/test')
     public test() {
