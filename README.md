@@ -27,7 +27,8 @@
 
 ### 3.2 Logger
 [winston-github文档](https://github.com/winstonjs/winston)
-
+[打印每个接口的request和response](https://stackoverflow.com/questions/55093055/logging-request-response-in-nest-js)
+[如何使用Logger打印req和res](https://github.com/julien-sarazin/nest-playground/issues/1)
 
 
 # 4.待办任务
