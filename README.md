@@ -30,6 +30,10 @@
 [打印每个接口的request和response](https://stackoverflow.com/questions/55093055/logging-request-response-in-nest-js)
 [如何使用Logger打印req和res](https://github.com/julien-sarazin/nest-playground/issues/1)
 
+### 3.3 winston
+[将Winston集成到nest Logger中](https://github.com/gremo/nest-winston)
+
+### 3.4 雪花算法生成id
 
 # 4.待办任务
 - [ ] 1.使用`multer`进行文件上传
@@ -40,3 +44,8 @@
   - [ ] 1.如何自定义logger
   - [ ] 2.使用winston讲log持久化
   - [ ] 4.打印请求和响应的日志
+- [ ] 3.winston
+  - [ ] 1.格式化：如何格式化保存到文件中
+  - [ ] 2.如何格式化早console中输出 
+  - [ ] 3.文章：翻译Winston的`transport`和`format`功能
+  - [ ] 4.文章：如何使用Winston拦截请求和相应信息
