@@ -26,12 +26,12 @@
 - [multer,express中间件-GitHub文档](https://github.com/expressjs/multer#multeropts)
 
 ### 3.2 Logger
-[winston-github文档](https://github.com/winstonjs/winston)
-[打印每个接口的request和response](https://stackoverflow.com/questions/55093055/logging-request-response-in-nest-js)
-[如何使用Logger打印req和res](https://github.com/julien-sarazin/nest-playground/issues/1)
+* [winston-github文档](https://github.com/winstonjs/winston)
+* [打印每个接口的request和response](https://stackoverflow.com/questions/55093055/logging-request-response-in-nest-js)
+* [如何使用Logger打印req和res](https://github.com/julien-sarazin/nest-playground/issues/1)
 
 ### 3.3 winston
-[将Winston集成到nest Logger中](https://github.com/gremo/nest-winston)
+- [将Winston集成到nest Logger中](https://github.com/gremo/nest-winston)
 
 ### 3.4 雪花算法生成id
 
