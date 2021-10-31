@@ -1,4 +1,4 @@
-import { Controller, Get, Post, UploadedFile, UseInterceptors, Logger, Inject, LoggerService, UploadedFiles } from "@nestjs/common";
+import { Controller, Get, Post, UploadedFile, UseInterceptors, Logger, Inject, LoggerService, UploadedFiles, Query } from "@nestjs/common";
 import { FileInterceptor, FilesInterceptor } from "@nestjs/platform-express";
 import { diskStorage, Storage } from '../utils/multer';
 import { paths } from 'config'
@@ -39,6 +39,11 @@ export class ImageController {
     public uploadAFile(@UploadedFile() file: Express.Multer.File) {
         return this.service.upload(file);
     }
+    /**
+     * 批量上传
+     * @param files 
+     * @returns 
+     */
     @Post('/uploadBatch')
     @UseInterceptors(FilesInterceptor('files', 10, { storage: diskStorage}))
     public uploadBatch(@UploadedFiles() files: Express.Multer.File[]) {
